@@ -1,4 +1,3 @@
 # SummarAIze
-<br>
 
 ### In progress... 🚧
