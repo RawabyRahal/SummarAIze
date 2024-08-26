@@ -17,7 +17,7 @@ const Hero = () => {
       </nav>
 
       <h1 className="head_text">
-        Summarize Articles with <br className="max-md:hidden" />
+        Summarize Articles using <br className="max-md:hidden" />
         <span className="orange_gradient ">AI Technology</span>
       </h1>
 
