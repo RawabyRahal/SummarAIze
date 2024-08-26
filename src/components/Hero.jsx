@@ -18,11 +18,12 @@ const Hero = () => {
 
       <h1 className="head_text">
         Summarize Articles with <br className="max-md:hidden" />
-        <span className="orange_gradient ">OpenAI GPT-4</span>
+        <span className="orange_gradient ">AI Technology</span>
       </h1>
 
       <h2 className="desc">
-      Simplify your reading with SummarAIze — an open-source AI tool that transforms long articles into concise, easy-to-read summaries.
+        Make reading easier with SummarAIze, an AI tool that converts lengthy
+        articles into clear, concise summaries.{" "}
       </h2>
     </header>
   );
