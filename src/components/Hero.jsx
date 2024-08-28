@@ -1,10 +1,10 @@
-import { logo } from "../assets";
+import { logo, brain } from "../assets";
 
 const Hero = () => {
   return (
     <header className="w-full flex justify-center items-center flex-col">
       <nav className="flex justify-between items-center w-full mb-10 pt-3">
-        <img src={logo} alt="sumz_logo" className="w-28 object-contain" />
+        <img src={brain} alt="sumz_logo" className="w-12 object-contain" />
         <button
           type="button"
           onClick={() =>
@@ -18,7 +18,7 @@ const Hero = () => {
 
       <h1 className="head_text">
         Summarize Articles using <br className="max-md:hidden" />
-        <span className="orange_gradient ">AI Technology</span>
+        <span className="chatgpt_gradient">AI Technology</span>
       </h1>
 
       <h2 className="desc">

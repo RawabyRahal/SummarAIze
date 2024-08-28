@@ -86,6 +86,16 @@
 .orange_gradient {
   @apply bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent;
 }
+/* .chatgpt_gradient {
+  background: linear-gradient(to right, #00A67E, #1A8F85, #2C8185);
+  -webkit-background-clip: text;
+  color: transparent;
+} */
+.chatgpt_gradient {
+  background: linear-gradient(to right, #219deb, #eb3232); /* Light blue to light red gradient */
+  -webkit-background-clip: text;
+  color: transparent;
+}
 
 .desc {
   @apply mt-5 text-lg text-gray-600 sm:text-xl text-center max-w-2xl;
