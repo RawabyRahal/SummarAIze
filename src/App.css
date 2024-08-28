@@ -92,7 +92,7 @@
   color: transparent;
 } */
 .chatgpt_gradient {
-  background: linear-gradient(to right, #219deb, #eb3232); /* Light blue to light red gradient */
+  background: linear-gradient(to right, #1673ad, #eb3232); /* Light blue to light red gradient */
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -123,4 +123,51 @@
 
 .summary_box {
   @apply rounded-xl border border-gray-200 bg-white/20 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur p-4;
+}
+
+:root {
+  --bg-color-light: #ffffff;
+  --text-color-light: #000000;
+  --bg-color-dark: #121212;
+  --text-color-dark: #ffffff;
+}
+
+.light-theme {
+  background-color: var(--bg-color-light);
+  color: var(--text-color-light);
+}
+
+.dark-theme {
+  background-color: var(--bg-color-dark);
+  color: var(--text-color-dark);
+}
+
+/* Dark Theme Specific Styles */
+body.dark-theme .url_input {
+  background-color: #1e1e1e; /* Dark input background */
+  color: #ffffff; /* Dark input text color */
+}
+
+body.dark-theme .link_card {
+  background-color: #2c2c2c; /* Dark card background */
+  border-color: #444; /* Dark card border */
+}
+
+body.dark-theme .summary_box {
+  background-color: #333; /* Dark summary box background */
+}
+
+/* Light Theme Specific Styles */
+body.light-theme .url_input {
+  background-color: #ffffff; /* Light input background */
+  color: #000000; /* Light input text color */
+}
+
+body.light-theme .link_card {
+  background-color: #f5f5f5; /* Light card background */
+  border-color: #ccc; /* Light card border */
+}
+
+body.light-theme .summary_box {
+  background-color: #f9f9f9; /* Light summary box background */
 }

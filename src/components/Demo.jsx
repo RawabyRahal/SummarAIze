@@ -1,22 +1,24 @@
 import { useEffect, useState } from "react";
 import { copy, linkIcon, loader, tick } from "../assets";
 import { useLazyGetSummaryQuery } from "../services/article";
+import { useTheme } from "../context/ThemeContext";
 
 const Demo = () => {
+  const { isDarkTheme } = useTheme(); // Use the theme context
   const [article, setArticle] = useState({ url: "", summary: "" });
   const [allArticles, setAllArticles] = useState([]);
+  const [copied, setCopied] = useState("");
 
   const [getSummary, { error, isFetching }] = useLazyGetSummaryQuery();
 
   useEffect(() => {
-    const articlesFromLocalStorage = JSON.parse(
-      localStorage.getItem("articles")
-    );
+    const articlesFromLocalStorage = JSON.parse(localStorage.getItem("articles"));
 
     if (articlesFromLocalStorage) {
       setAllArticles(articlesFromLocalStorage);
     }
   }, []);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -30,12 +32,23 @@ const Demo = () => {
       setAllArticles(updatedAllArticles);
 
       localStorage.setItem("articles", JSON.stringify(updatedAllArticles));
-
-      console.log(newArticle);
     }
   };
+
+  const handleCopy = (copyUrl) => {
+    setCopied(copyUrl);
+    navigator.clipboard.writeText(copyUrl);
+    setTimeout(() => setCopied(false), 3000);
+  };
+
+  const handleKeyDown = (e) => {
+    if (e.keyCode === 13) {
+      handleSubmit(e);
+    }
+  };
+
   return (
-    <section className="mt-16 w-full max-w-xl">
+    <section className={`mt-16 w-full max-w-xl ${isDarkTheme ? 'dark' : 'light'}`}>
       <div className="flex flex-col w-full gap-2">
         <form
           className="relative flex justify-center items-center"
@@ -49,10 +62,11 @@ const Demo = () => {
 
           <input
             type="url"
-            placeholder="Enter a URL"
+            placeholder="Please enter the URL"
             value={article.url}
             onChange={(e) => setArticle({ ...article, url: e.target.value })}
             required
+            onKeyDown={handleKeyDown}
             className="url_input peer"
           />
 
@@ -72,10 +86,10 @@ const Demo = () => {
               onClick={() => setArticle(item)}
               className="link_card"
             >
-              <div className="copy_btn">
+              <div className="copy_btn" onClick={() => handleCopy(item.url)}>
                 <img
-                  src={copy}
-                  alt="copy_icon"
+                  src={copied === item.url ? tick : copy}
+                  alt={copied === item.url ? "tick_icon" : "copy_icon"}
                   className="w-[40%] h-[40%] object-contain"
                 />
               </div>
@@ -88,6 +102,33 @@ const Demo = () => {
       </div>
 
       {/* DISPLAY RESULT */}
+      <div className="my-10 max-w-full flex justify-center items-center">
+        {isFetching ? (
+          <img src={loader} alt="loader" className="w-20 h-20 object-contain" />
+        ) : error ? (
+          <p className="font-inter font-bold text-black text-center">
+            Well, that wasn't supposed to happen...
+            <br />
+            <span className="font-satoshi font-normal text-gray-700">
+              {error?.data?.error}
+            </span>
+          </p>
+        ) : (
+          article.summary && (
+            <div className="flex flex-col gap-3">
+              <h2 className="font-satoshi font-bold text-gray-600 text-xl">
+                Article <span className="blue_gradient">Summary</span>
+              </h2>
+
+              <div className="summary_box">
+                <p className="font-inter font-medium text-sm text-gray-700">
+                  {article.summary}
+                </p>
+              </div>
+            </div>
+          )
+        )}
+      </div>
     </section>
   );
 };
