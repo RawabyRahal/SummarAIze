@@ -121,7 +121,7 @@ const Demo = () => {
               </h2>
 
               <div className="summary_box">
-                <p className="font-inter font-medium text-sm text-gray-700">
+                <p className="font-inter font-medium text-sm ">
                   {article.summary}
                 </p>
               </div>

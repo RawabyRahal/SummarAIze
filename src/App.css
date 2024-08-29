@@ -134,12 +134,21 @@
 
 .light-theme {
   background-color: var(--bg-color-light);
-  color: var(--text-color-light);
+  color: var(--text-color-light) !important;
 }
 
 .dark-theme {
   background-color: var(--bg-color-dark);
-  color: var(--text-color-dark);
+  color: var(--text-color-dark) !important;
+}
+
+/* Tailwind Utility Overrides */
+body.light-theme .summary_box{
+  @apply text-gray-700;
+}
+
+body.dark-theme .head_text{
+  @apply text-white;
 }
 
 /* Dark Theme Specific Styles */
