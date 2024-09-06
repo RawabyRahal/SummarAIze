@@ -9,7 +9,7 @@ const Hero = () => {
       <nav className="flex justify-between items-center w-full mb-10 pt-3">
         <img src={brain} alt="sumz_logo" className="w-12 object-contain" />
         <div>
-          <button
+          {/* <button
             type="button"
             onClick={() =>
               window.open("https://github.com/RawabyRahal/SummarAIze", "_blank")
@@ -17,7 +17,7 @@ const Hero = () => {
             className="black_btn"
           >
             Github
-          </button>
+          </button> */}
           <button
             type="button"
             onClick={toggleTheme}
