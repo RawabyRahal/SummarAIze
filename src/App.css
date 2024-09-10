@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+main{
+  background-image: url('/src/assets/grid.svg');
+}
 
 body.dark-theme .main {
   /* width: 100vw; */
@@ -12,8 +15,8 @@ body.dark-theme .main {
   padding: 120px 24px 160px 24px;
   pointer-events: none;
   content: "";
-  background-image: url("/src/assets/grid.svg");
-  z-index: 10;
+  /* background-image: url("/src/assets/grid.svg"); */
+  /* z-index: 10; */
   position: absolute;
   width: 100%;
   height: 100%;
@@ -22,9 +25,9 @@ body.dark-theme .main {
   /* filter: invert(1); */
 }
 
-body.light-theme .main{
-  position: fixed;
-  display: flex;
+.light-theme .main{
+  /* position: fixed; */
+  /* display: flex; */
   justify-content: center;
   padding: 120px 24px 160px 24px;
   pointer-events: none;
@@ -85,6 +88,9 @@ body.light-theme .main{
   opacity: 0.15;
 }
 
+/* .summary_box {
+  background-color: rgba(255, 255, 255, 0.8);
+} */
 @media screen and (max-width: 640px) {
   .main {
     padding: 0;
@@ -173,32 +179,30 @@ body.dark-theme .head_text{
   @apply text-white;
 }
 
-/* Dark Theme Specific Styles */
 body.dark-theme .url_input {
-  background-color: #1e1e1e; /* Dark input background */
-  color: #ffffff; /* Dark input text color */
+  background-color: #1e1e1e;
+  color: #ffffff; 
 }
 
 body.dark-theme .link_card {
-  background-color: #2c2c2c; /* Dark card background */
-  border-color: #444; /* Dark card border */
+  background-color: #2c2c2c;
+  border-color: #444; 
 }
 
 body.dark-theme .summary_box {
-  background-color: #333; /* Dark summary box background */
+  background-color: #333;
 }
 
-/* Light Theme Specific Styles */
 body.light-theme .url_input {
-  background-color: #ffffff; /* Light input background */
-  color: #000000; /* Light input text color */
+  background-color: #ffffff; 
+  color: #000000; 
 }
 
 body.light-theme .link_card {
-  background-color: #f5f5f5; /* Light card background */
-  border-color: #ccc; /* Light card border */
+  background-color: #f5f5f5; 
+  border-color: #ccc; 
 }
 
 body.light-theme .summary_box {
-  background-color: #f9f9f9; /* Light summary box background */
+  background-color: #f9f9f9;
 }
