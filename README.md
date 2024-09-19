@@ -1,3 +1,3 @@
 # SummarAIze
 
-### In progress... 🚧
+### In Progress... 🚧
