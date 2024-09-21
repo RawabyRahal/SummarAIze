@@ -1,3 +1,3 @@
 # SummarAIze
 
-### In rogress... 🚧
+### In progress... 🚧
