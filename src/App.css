@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-main{
+main {
   background-image: url('/src/assets/grid.svg');
 }
 
@@ -25,7 +25,7 @@ body.dark-theme .main {
   /* filter: invert(1); */
 }
 
-.light-theme .main{
+body.light-theme .main{
   /* position: fixed; */
   /* display: flex; */
   justify-content: center;
