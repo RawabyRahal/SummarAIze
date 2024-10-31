@@ -1,5 +1,3 @@
 # SummarAIze
 
-
-ד
 ### In progress... 🚧
