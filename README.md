@@ -13,21 +13,22 @@ SummarAIze is an open-source AI tool designed to simplify reading by converting 
  - **API:** RapidAPI Summarizer API
 
 ### Getting Started
-To install SummarAIze locally:
+**To install SummarAIze locally:**
 
 
-1. Clone the Repository
+1. **Clone the Repository**
     ```bash
     git clone https://github.com/RawabyRahal/SummarAIze.git
 
-2. Navigate to the Project Directory
+2. **Navigate to the Project Directory**
    ```bash
    cd SummarAIze
-3. Install Dependencies
+   
+3. **nstall Dependencies**
    ```bash
    npm install
 
-4. Run the Application
+4. **Run the Application**
    ```bash
    npm start
 
