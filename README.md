@@ -37,4 +37,4 @@ To set up SummarAIze on your local machine:
  4.  **Copy to Clipboard:** Use the copy function to easily share or store the summarized content.
 
 
-### Thank you for exploring SummarAIze! Try it out today and discover how effortless summarizing articles can be! 📚🔍
+#### Thank you for exploring SummarAIze! Try it out today and discover how effortless summarizing articles can be! 📚🔍
