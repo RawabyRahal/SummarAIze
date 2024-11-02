@@ -29,3 +29,9 @@ To set up SummarAIze on your local machine:
 4. Run the Application
    ```bash
    npm start
+
+### 📖 Usage
+ - Input Article URL: Enter the URL of the article to be summarized.
+ - Generate Summary: SummarAIze will produce a concise version of the article using the RapidAPI Summarizer.
+ - Save and Browse: Save summaries or browse through your URL history for easy access to past summaries.
+ - Copy to Clipboard: Use the copy function to easily share or store the summarized content.
