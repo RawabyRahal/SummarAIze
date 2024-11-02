@@ -9,5 +9,5 @@ SummarAIze is an open-source AI tool designed to simplify reading by converting 
  - Browse URL History: Access previously summarized articles through a browsing history feature.
 
 ### 🛠️ Technologies Used
- -# Frontend: React, Redux Toolkit
- - API: RapidAPI Summarizer API
+ - **[Frontend]: React, Redux Toolkit
+ - **[API]: RapidAPI Summarizer API
