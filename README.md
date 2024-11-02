@@ -1,3 +1,3 @@
 # SummarAIze
 
-### In progress... 🚧
+### Welcome to SummarAIze
