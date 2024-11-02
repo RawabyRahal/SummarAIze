@@ -35,6 +35,6 @@ To set up SummarAIze on your local machine:
  2.  **Generate Summary:** SummarAIze will produce a concise version of the article using the RapidAPI Summarizer.
  3.  **Save and Browse:** Save summaries or browse through your URL history for easy access to past summaries.
  4.  **Copy to Clipboard:** Use the copy function to easily share or store the summarized content.
-
+<br>
 
 #### Thank you for exploring SummarAIze! Try it out today and discover how effortless summarizing articles can be! 📚🔍
