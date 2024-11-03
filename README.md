@@ -27,7 +27,7 @@ SummarAIze is an open-source AI tool designed to simplify reading by converting 
    cd SummarAIze
    
 5. **nstall Dependencies**
-6. 
+   
    ```bash
    npm install
 
