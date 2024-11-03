@@ -17,7 +17,7 @@ SummarAIze is an open-source AI tool designed to simplify reading by converting 
 
 
 1. **Clone the Repository**
-2. 
+   
     ```bash
     git clone https://github.com/RawabyRahal/SummarAIze.git
 
