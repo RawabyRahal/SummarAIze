@@ -32,6 +32,7 @@ SummarAIze is an open-source AI tool designed to simplify reading by converting 
    npm install
 
 7. **Run the Application**
+   
    ```bash
    npm start
 
