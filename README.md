@@ -22,14 +22,15 @@ SummarAIze is an open-source AI tool designed to simplify reading by converting 
     git clone https://github.com/RawabyRahal/SummarAIze.git
 
 3. **Navigate to the Project Directory**
+   
    ```bash
    cd SummarAIze
    
-4. **nstall Dependencies**
+5. **nstall Dependencies**
    ```bash
    npm install
 
-5. **Run the Application**
+6. **Run the Application**
    ```bash
    npm start
 
