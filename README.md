@@ -13,7 +13,7 @@ SummarAIze is an open-source AI tool designed to simplify reading by converting 
  - **API:** RapidAPI Summarizer API
 
 ### Getting Started
-**To install SummarAIze locally**
+**To install SummarAIze locally:**
 
 
 1. **Clone the Repository**
