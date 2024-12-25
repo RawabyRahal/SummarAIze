@@ -43,4 +43,4 @@ SummarAIze is an open-source AI tool designed to simplify reading by converting 
  4.  **Copy to Clipboard:** Use the copy function to easily share or store the summarized content.
 <br>
 
-#### Thank you for exploring SummarAIze! Try it out today and discover how effortless summarizing articles can be! 📚🔍
+#### Thank you for exploring SummarAIze! Try it out today and discover how effortless summarizing articles can be!📚🔍
